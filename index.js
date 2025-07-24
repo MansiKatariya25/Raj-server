@@ -1,7 +1,9 @@
 const express = require('express');
 const axios = require('axios');
+const cors = require('cors');
 
 const app = express();
+app.use(cors());
 app.use(express.json());
 
 const GEMINI_API_KEY = 'AIzaSyBuZNTiJ5EjdsN4-8vFZcqBH_TFatVYFZQ'; // <-- Put your Gemini API key here
